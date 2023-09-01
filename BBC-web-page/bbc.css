@@ -1,0 +1,182 @@
+body,
+p,
+div,
+ul,
+li,
+span,
+hi,
+h2,
+input {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  color: #fffffd;
+  font-family: Arial, Helvetica, freesans, sans-serif;
+  font-size: 0.833rem;
+  background-color: #e7e8e1;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+/* Nav styling */
+#topnav {
+  background-color: #000000;
+  width: 100%;
+  height: 55px;
+}
+.page-width {
+  width: 1268px;
+  margin: 0px auto;
+}
+#topnav-logo {
+  /* padding: 5.5px 100px 2px 0px; */
+  float: left;
+}
+#topnav-signin {
+  font-stretch: semi-expanded;
+  font-size: 13px;
+  font-weight: 600;
+  float: left;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.logo {
+  width: 100px;
+  height: 50px;
+  display: flex;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.logo .sign-in {
+  width: 400px !important;
+}
+/*#topnav-signin img {
+  position: relative;
+  top: 7px;
+  padding-right: 1px;
+}*/
+
+#topnav-menu ul {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
+  width: 70%;
+}
+#topnav-menu li {
+  list-style-type: none;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+#topnav-menu ul li span {
+  position: relative;
+  top: 1px;
+  padding-left: 57px;
+}
+#topnav-search {
+  float: left;
+  padding: 0px 0px 2px 18px;
+}
+#topnav-search input {
+  padding-bottom: 2px;
+  margin: 0;
+  padding-left: 7px;
+  height: 45px;
+  width: 240px;
+  background-color: #202224;
+  font-weight: 600;
+  position: absolute;
+}
+
+/* Style for the parent container */
+.parentContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+/* Style for child1 */
+.parentContainer .child1 {
+  width: 45%;
+  /* border: 1px solid red; */
+  height: 580px;
+  flex-wrap: wrap;
+}
+/* Style for child2 */
+.parentContainer .child2 {
+  display: flex;
+  width: 55%;
+  height: 580px;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+/* Style for subchild1 */
+.parentContainer .child2 .subchild1 {
+  border: 1px solid black;
+  width: 48.7%;
+}
+/* Style for subchild2 */
+.parentContainer .child2 .subchild2 {
+  border: 1px solid black;
+  width: 48.7%;
+}
+/* Style for subchild3 */
+.parentContainer .child2 .subchild3 {
+  border: 1px solid black;
+  width: 48.7%;
+}
+/* Style for subchild4 */
+.parentContainer .child2 .subchild4 {
+  border: 1px solid black;
+  width: 48.7%;
+}
+/* bacgroung styles for the sections */
+.child1 {
+  background-image: url('./images/inferno.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.subchild1 {
+  background-image: url('./images/Tategroup.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.subchild2 {
+  background-image: url('./images/chinaeconomy.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.subchild3 {
+  background-image: url('./images/moonSouthpole.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.subchild4 {
+  background-image: url('./images/mafiaLife.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h2 {
+  color: #fffffd;
+}
+h1 {
+  color: #000000;
+}
