@@ -142,6 +142,23 @@ body {
   border: 1px solid black;
   width: 48.7%;
 }
+.parentContainer .child1 h2 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75%;
+}
+.parentContainer .child2 .subchild1 h2,
+.parentContainer .child2 .subchild2 h2,
+.parentContainer .child2 .subchild3 h2,
+.parentContainer .child2 .subchild4 h2 {
+  text-align: center;
+  display: flex; /* Add this */
+  align-items: center; /* Add this to center text vertically */
+  justify-content: center; /* Add this to center text horizontally */
+  height: 95%; /* Add this to make the text take up the full height */
+}
 /* bacgroung styles for the sections */
 .child1 {
   background-image: url('./images/inferno.jpeg');
