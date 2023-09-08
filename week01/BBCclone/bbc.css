@@ -154,7 +154,7 @@ body {
 .parentContainer .child2 .subchild3 h2,
 .parentContainer .child2 .subchild4 h2 {
   text-align: center;
-  display: flex; /* Add this */
+  display: flex; 
   align-items: center; /* Add this to center text vertically */
   justify-content: center; /* Add this to center text horizontally */
   height: 95%; /* Add this to make the text take up the full height */
@@ -197,3 +197,4 @@ h2 {
 h1 {
   color: #000000;
 }
+

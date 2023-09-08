@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  text-decoration: solid;
+}
+header {
+  background-color: rgb(20, 35, 48);
+  color: white;
+  text-align: center;
+  padding-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebar {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  /* border: 1px solid #ddd; */
+  border-radius: 5px;
+  display: inline;
+}
+
+.sidebar ul{
+  list-style: none;
+}
+.sidebar ul a{
+  text-decoration: none;
+  list-style: none;
+}
+
+/* CSS for styling the navigation links */
+nav {
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 auto;
+  padding-right: 25px;
+  font-size: 18px;
+}
+main {
+  display: flex;
+  height: 100%;
+}
+
+/* .sidebar {
+  background-color: whitesmoke;
+  width: 30%;
+  position: sticky;
+} */
+.blogpost {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+.blogpost a {
+  text-decoration: none;
+}
+
+article {
+  background-color: #d7cdcd;
+  box-shadow: 0 0 3px rgba(20, 20, 20, 0.2);
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 48%;
+  height: 200px;
+  border: 25px;
+}
+.checked {
+  color: yellow;
+}
+footer {
+  background-color: rgb(159, 175, 175);
+  padding: 0 5px;
+  height: 60px;
+}
+footer ul {
+  list-style: none;
+}
+footer a {
+  text-decoration: none;
+}
