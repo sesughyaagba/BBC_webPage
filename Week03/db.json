@@ -1,0 +1,44 @@
+{
+  "blogPosts": [
+    {
+      "img": "img1",
+      "blogTitle": "The Jobs of the Future",
+      "author": "Sesugh Yaagba",
+      "article": "The Republic will need to steady the ship in the next few minutes as they look vulnerable at the moment, with France waltzing forward at Lorem ipsum dolor sit amet consectetur,",
+      "likes": 0,
+      "comments": []
+    },
+    {
+      "img": "img2",
+      "blogTitle": "The Euro Qualifiers",
+      "author": "Sesugh Yaagba",
+      "article": "The Republic will need to steady the ship in the next few minutes as they look vulnerable at the moment, with France waltzing forward at Lorem ipsum dolor sit amet consectetur,",
+      "likes": 0,
+      "comments": []
+    },
+    {
+      "img": "img3",
+      "blogTitle": "The beauty of Nature",
+      "author": "Sesugh Yaagba",
+      "article": "The Republic will need to steady the ship in the next few minutes as they look vulnerable at the moment, with France waltzing forward at Lorem ipsum dolor sit amet consectetur,",
+      "likes": 0,
+      "comments": []
+    },
+    {
+      "img": "img4",
+      "blogTitle": "Financial Stability",
+      "author": "Sesugh Yaagba",
+      "article": "The Republic will need to steady the ship in the next few minutes as they look vulnerable at the moment, with France waltzing forward at Lorem ipsum dolor sit amet consectetur,",
+      "likes": 0,
+      "comments": []
+    },
+    {
+      "img": "img5",
+      "blogTitle": "The 'Humanity in Humans'",
+      "author": "Sesugh Yaagba",
+      "article": "The Republic will need to steady the ship in the next few minutes as they look vulnerable at the moment, with France waltzing forward at Lorem ipsum dolor sit amet consectetur,",
+      "likes": 0,
+      "comments": []
+    }
+  ]
+}
