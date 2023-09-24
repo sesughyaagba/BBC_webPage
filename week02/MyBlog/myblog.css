@@ -80,14 +80,13 @@ main {
 }
 
 .blogpost {
-  /* background-color: #babacb; */
   width: 100%;
   display: flex;
   justify-content: center;
   margin: 5rem 0 0 12rem;
 }
 .blogpost .container {
-  width: 80%;
+  width: 60%;
   margin: 2rem 0;
   background-color: #fff;
 }
