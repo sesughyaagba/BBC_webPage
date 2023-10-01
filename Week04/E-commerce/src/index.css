@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+:root {
+  font-family: montserrat;
+  line-height: 1.5;
+  
+  font-weight: 400;
+  --darkblue: rgb(37 43 66);
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #ffff;
+ 
+    --color-texthighlight: rgb(37 43 66);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(  --darkblue, rgb(37 43 66));
+  height: 46px;
+ padding:0px 24px 0px 24px;
+}
+.contact-container .contact{
+  padding-right: 0.7rem;
+}
+.social-container .image-wrapper{
+  margin: 0.7rem;
+  height: 16px;
+  width: 16px;
+}
+
+
