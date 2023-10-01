@@ -9,9 +9,9 @@ function fetchData() {
 
             const blogPostsContainer = document.getElementById('blog-posts');
 
-            // Check if blogPosts is an array before using forEach
+// Check if blogPosts is an array before using forEach
             if (Array.isArray(blogPosts)) {
-                // Loop through the blog posts and display them
+// Loop through the blog posts and display them
                 blogPosts.forEach(post => {
                     const postDiv = document.createElement('div');
                     postDiv.innerHTML = `
@@ -35,3 +35,6 @@ function fetchData() {
 
 // Call the fetchData function to retrieve and display the data
 fetchData();
+
+
+
