@@ -129,9 +129,11 @@ const FeaturedProducts = () => {
                     <span>{record.price.discountedPrice}</span>
                   </h5>
                   <div className="fill-imgs">
-                    {record.fillImages.map((imageSrc, i) => (
-                      <img src={imageSrc} alt="fill1" key={i} />
-                    ))}
+                    <a href="#">
+                      {record.fillImages.map((imageSrc, i) => (
+                        <img src={imageSrc} alt="fill1" key={i} />
+                      ))}
+                    </a>
                   </div>
                 </div>
               </div>
