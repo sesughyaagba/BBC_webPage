@@ -10,7 +10,7 @@ const TopHeader = () => {
     <div className="top-header">
       <div className="contact-container">
         <img src={callIcon} alt="call icon" />
-        <span className = 'contact'>(225) 555-0118</span>
+        <span className="contact">(225) 555-0118</span>
         <img src={emailIcon} alt="email icon" />
         <span>michell.rivera@example.com</span>
       </div>
@@ -21,16 +21,24 @@ const TopHeader = () => {
         <span>Follow us:</span>
 
         <span className="image-wrapper">
-          <img src={igIcon} alt="ig icon" />
+          <button>
+            <img src={igIcon} alt="ig icon" />
+          </button>
         </span>
         <span className="image-wrapper">
-          <img src={youTubeIcon} alt="youTube icon" />
+          <button>
+            <img src={youTubeIcon} alt="youTube icon" />
+          </button>
         </span>
         <span className="image-wrapper">
-          <img src={fBookIcon} alt="facebook icon" />
+          <button>
+            <img src={fBookIcon} alt="facebook icon" />
+          </button>
         </span>
         <span className="image-wrapper">
-          <img src={twitterIcon} alt="twitter icon" />
+          <button>
+            <img src={twitterIcon} alt="twitter icon" />
+          </button>
         </span>
       </div>
     </div>
