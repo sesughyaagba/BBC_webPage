@@ -333,9 +333,7 @@ button {
 .product-card {
   width: calc(25% - 1rem);
 }
-.product-img {
-  /* overflow: hidden; */
-}
+
 
 .middle-content {
   background-color: var(--secondary-color-1);
