@@ -8,18 +8,24 @@ const MiddleBanner = () => {
       <section className="middle-banner">
         <div className="middle-carousel">
           <div className="middle-content">
-            <img className="left-arrow" src={ChevronLeft} alt="Right click" />
-            <img className="right-arrow" src={ChevronRight} alt="Left" />
+            <img
+              className="middle-left-arrow"
+              src={ChevronLeft}
+              alt="Right click"
+            />
+            <img className="middle-right-arrow" src={ChevronRight} alt="Left" />
             <div className="middle-content">
               <div className="middle-text">
-                <h5 className="middle-summer">SUMMER 2020</h5>
+                <h4 className="middle-summer">SUMMER 2020</h4>
                 <h1 className="middle-collection">Vita Classic Product</h1>
                 <h4 className="middle-advert-text">
                   We know how large objects will act, We know how are objects
                   will act, We know
                 </h4>
                 <div className="middle-button">
-                  <span className="middle-price">$16.8</span>
+                  <span className="middle-price">
+                    <h3>$16.8</h3>
+                  </span>
 
                   <button className="middle-banner-button">ADD TO CART</button>
                 </div>

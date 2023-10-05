@@ -18,6 +18,7 @@
   --lightblue-color: #23a6f0;
   --text-color: #252b42;
   --secondary-color-1: #23856d;
+  --muted-text-color: #bdbdbd;
 }
 * {
   margin: 0;
@@ -334,16 +335,15 @@ button {
   width: calc(25% - 1rem);
 }
 
-
+/* Middle banner  */
 .middle-content {
   background-color: var(--secondary-color-1);
-  height: 44.75rem;
-  position: relative;
   display: flex;
   align-items: center;
   padding-left: 6rem;
+  padding-top: 7rem;
 }
-.middle-content .left-arrow {
+.middle-content .middle-left-arrow {
   position: absolute;
   left: 20px;
   top: 55%;
@@ -351,7 +351,7 @@ button {
   height: 2.77944rem;
   flex-shrink: 0;
 }
-.middle-content .right-arrow {
+.middle-content .middle-right-arrow {
   position: absolute;
   right: 20px;
   top: 55%;
@@ -368,58 +368,132 @@ button {
   margin-top: 3.75rem;
 }
 .middle-content .middle-text .middle-summer {
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 700;
-  letter-spacing: 0.00625rem;
   color: var(--light-text-color);
-  width: 9.25rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  letter-spacing: 0.0125rem;
 }
 .middle-content .middle-collection {
+  color: var(--light-text-color);
   font-size: 3.625rem;
   font-weight: 700;
   line-height: 5rem;
   letter-spacing: 0.0125rem;
-  color: var(--light-text-color);
 }
 .middle-content .middle-advert-text {
+  color: var(--light-text-color);
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.25rem;
   letter-spacing: 0.0125rem;
-  color: var(--light-text-color);
   width: 21.3125rem;
-}
-.middle-content .middle-banner-button {
-  padding: 0.9375rem 2.5rem;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.625rem;
-  font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.375rem;
-  background: var(--success-color);
-  color: var(--light-text-color);
-  border: none;
-  width: fit-content;
 }
 .middle-button {
   display: flex;
   align-items: center;
   margin-left: 4rem;
-  gap: 0.5rem;
+  gap: 2.12rem;
+  margin-left: 0;
 }
 .middle-price {
+  color: var(--light-text-color);
+  text-align: center;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 2rem;
   letter-spacing: 0.00625rem;
+}
+.middle-content .middle-banner-button {
+  display: flex;
+  padding: 0.9375rem 2.5rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.3125rem;
+  background: var(--success-color);
+  border: none;
+}
+
+.carousel-indicator {
+  margin-right: 60%;
+}
+/* Asian Wears */
+.asianMan-content {
+  background-color: var(--light-text-color);
+  min-height: 17rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1.9rem;
+  gap: 4.12rem;
+}
+
+.asianMan-content .asianMan-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 9.75rem;
+  gap: 1.88rem;
+  margin-top: 10.13rem;
+}
+.asianMan-content .asianMan-text .asianMan-summer {
+  color: var(--muted-text-color);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.00625rem;
+}
+.asianMan-content .asianMan-collection {
+  color: var(--text-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3.125rem;
+  letter-spacing: 0.0125rem;
+}
+.asianMan-content .asianMan-advert-text {
+  color: var(--second-text-color);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  letter-spacing: 0.0125rem;
+}
+.asianMan-button {
+  display: flex;
+  align-items: center;
+  margin-left: 4rem;
+  gap: 0.94rem;
+}
+.asianMan-content .asianMan-banner-btn1 {
+  display: flex;
+  padding: 0.9375rem 2.5rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.3125rem;
+  background: var(--success-color);
   color: var(--light-text-color);
-  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.375rem;
+  letter-spacing: 0.0125rem;
+  border: none;
 }
-.carousel-indicator{
-margin-right: 60%;
+.asianMan-content .asianMan-banner-btn2 {
+  display: flex;
+  padding: 0.9375rem 2.5rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.3125rem;
+  border: 1px solid var(--success-color);
+  color: var(--success-color);
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.375rem;
+  letter-spacing: 0.0125rem;
 }
+
 @media screen and (max-width: 795px) {
   .menu {
     flex-direction: column;
