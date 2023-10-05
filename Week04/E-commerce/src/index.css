@@ -58,6 +58,7 @@
 button {
   background-color: transparent;
   outline: none;
+  cursor: pointer;
 }
 
 /* BottomHeder Section */
@@ -435,12 +436,12 @@ button {
   border: none;
 }
 .middle-img {
-  width: 100%;
+  width: 60%;
   overflow: hidden;
 }
 .middle-img img {
   object-fit: cover;
-  width: 100%;
+  width: 75%;
   height: auto;
   overflow: hidden;
   position: relative;
@@ -562,6 +563,13 @@ button {
 .list{
   display: flex;
 }
+/* Featured Post Section */
+.featured-post-parent{
+  display: flex; 
+  margin-inline: 12.19rem;
+  gap: 1rem;
+}
+
 
 @media screen and (max-width: 795px) {
   .menu {

@@ -61,39 +61,43 @@ const featuredData = [
 
 const FeaturedPostsCard = () => {
   return (
-    <section>
+    <div className='featured-post-parent'>
       {featuredData.map((post) => (
         <div className="featuredPostsCard-container" key={post.id}>
-          <div>
-            <img src={post.imageSrc} alt="post1" />
-            <button>{post.button}</button>
-            <nav className="featuredPostsCard-nav">
-              <ul className="list">
-                {post.categories.map((category, categoryIndex) => (
-                  <li key={categoryIndex}>
-                    <a href="#">{category}</a>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-            <h4>{post.title}</h4>
-            <p>{post.description}</p>
-            <span>
-              <a href="#">
-                <img src={post.date.imageSrc} alt="date" />
-              </a>
-              {post.date.text}
-            </span>
-            <span>
-              <a href="#">
-                <img src={post.comments.imageSrc} alt="" />
-              </a>
-              {post.comments.text}
-            </span>
+          <div className="featured-post-child">
+            <div>
+              <img src={post.imageSrc} alt="post1" />
+            </div>
+            <div>
+              <button>{post.button}</button>
+              <nav className="featuredPostsCard-nav">
+                <ul className="list">
+                  {post.categories.map((category, categoryIndex) => (
+                    <li key={categoryIndex}>
+                      <a href="#">{category}</a>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+              <h4>{post.title}</h4>
+              <p>{post.description}</p>
+              <span>
+                <a href="#">
+                  <img src={post.date.imageSrc} alt="date" />
+                </a>
+                {post.date.text}
+              </span>
+              <span>
+                <a href="#">
+                  <img src={post.comments.imageSrc} alt="" />
+                </a>
+                {post.comments.text}
+              </span>
+            </div>
           </div>
         </div>
       ))}
-    </section>
+    </div>
   );
 };
 
