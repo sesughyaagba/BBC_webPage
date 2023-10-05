@@ -330,7 +330,7 @@ button {
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem 1rem;
+  gap: 1.88rem;
   justify-content: center;
   align-items: center;
 }
@@ -339,6 +339,16 @@ button {
 }
 .product-card {
   width: calc(25% - 1rem);
+  max-width: 14.9375rem;
+}
+.product-img {
+  width: 100%;
+  overflow: hidden;
+}
+.product-img img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 
 /* Middle banner  */
@@ -348,6 +358,8 @@ button {
   align-items: center;
   padding-left: 6rem;
   padding-top: 7rem;
+  position: relative;
+  max-width: 100%;
 }
 .middle-content .middle-left-arrow {
   position: absolute;
@@ -357,6 +369,7 @@ button {
   height: 2.77944rem;
   flex-shrink: 0;
 }
+
 .middle-content .middle-right-arrow {
   position: absolute;
   right: 20px;
@@ -419,6 +432,16 @@ button {
   border-radius: 0.3125rem;
   background: var(--success-color);
   border: none;
+}
+.middle-img {
+  width: 100%;
+  overflow: hidden;
+}
+.middle-img img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
 .carousel-indicator {
@@ -502,6 +525,7 @@ button {
 /* Featured Posts Header  */
 .featured-posts-header {
   text-align: center;
+  margin-inline: 11.2rem;
   margin-top: 7rem;
   margin-bottom: 5rem;
 }

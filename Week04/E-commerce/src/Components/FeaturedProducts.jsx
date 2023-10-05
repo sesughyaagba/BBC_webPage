@@ -114,32 +114,30 @@ const FeaturedProducts = () => {
         </p>
       </header>
       <div className="product-list">
-        {products.map((record, i) => {
-          return (
-            <>
-              <div className="product-card" key={i}>
-                <div className="product-img">
-                  <img src={record.imageSrc} alt={record.altText} />
-                </div>
-                <div className="product-info">
-                  <h5 className="dept-link">{record.department}</h5>
-                  <a href="#">{record.departmentLink}</a>
-                  <h5 className="price">
-                    <span>{record.price.originalPrice}</span>
-                    <span>{record.price.discountedPrice}</span>
-                  </h5>
-                  <div className="fill-imgs">
-                    <a href="#">
-                      {record.fillImages.map((imageSrc, i) => (
-                        <img src={imageSrc} alt="fill1" key={i} />
-                      ))}
-                    </a>
-                  </div>
+        {products.map((record, i) => (
+          <>
+            <div className="product-card" key={i}>
+              <div className="product-img">
+                <img src={record.imageSrc} alt={record.altText} />
+              </div>
+              <div className="product-info">
+                <h5 className="dept-link">{record.department}</h5>
+                <a href="#">{record.departmentLink}</a>
+                <h5 className="price">
+                  <span>{record.price.originalPrice}</span>
+                  <span>{record.price.discountedPrice}</span>
+                </h5>
+                <div className="fill-imgs">
+                  <a href="#">
+                    {record.fillImages.map((imageSrc, i) => (
+                      <img src={imageSrc} alt="fill1" key={i} />
+                    ))}
+                  </a>
                 </div>
               </div>
-            </>
-          );
-        })}
+            </div>
+          </>
+        ))}
       </div>
     </section>
   );

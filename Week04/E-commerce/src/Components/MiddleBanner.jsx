@@ -31,7 +31,7 @@ const MiddleBanner = () => {
                 </div>
               </div>
 
-              <div>
+              <div className='middle-img'>
                 <img src={shop1} alt="shop1" />
               </div>
             </div>
