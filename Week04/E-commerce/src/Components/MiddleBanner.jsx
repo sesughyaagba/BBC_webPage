@@ -31,11 +31,11 @@ const MiddleBanner = () => {
                 </div>
               </div>
 
-              <div className='middle-img'>
+              <div className="middle-img">
                 <img src={shop1} alt="shop1" />
               </div>
             </div>
-            <a classname="carousel-indicator" href="#">
+            <a className="carousel-indicator" href="#">
               <img src={carouselIndicator} alt="carouselIndicator" />
             </a>
           </div>

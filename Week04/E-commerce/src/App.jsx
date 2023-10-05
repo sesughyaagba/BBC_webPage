@@ -3,8 +3,8 @@ import EditorPick from './Components/EditorPick';
 import FeaturedProducts from './Components/FeaturedProducts';
 import MiddleBanner from './Components/MiddleBanner';
 import AsianWears from './Components/AsianWears';
-import FeaturedPosts from './Components/FeaturedPostsHeader';
 import FeaturedPostsHeader from './Components/FeaturedPostsHeader';
+import FeaturedPostsCard from './Components/FeaturedPostsCard';
 function App() {
   return (
     <>
@@ -26,8 +26,9 @@ function App() {
       <div>
         <FeaturedPostsHeader />
       </div>
+      <div><FeaturedPostsCard/></div>
     </>
   );
-}
+};
 
 export default App;

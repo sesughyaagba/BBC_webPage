@@ -295,39 +295,42 @@ button {
   border: none;
 }
 /* Featured Products Section */
-.featuredProducts-header {
+.featuredProducts-container .featuredProducts-header {
   text-align: center;
-  margin-block: 5rem;
+  margin-top: 5rem;
   padding: 0.62rem;
 }
-.featuredProducts-header .ft-products {
+.featuredProducts-container .featuredProducts-header .ft-products {
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.875rem;
   letter-spacing: 0.0125rem;
   color: var(--second-text-color);
 }
-.featuredProducts-header .best-products {
+.featuredProducts-container .featuredProducts-header .best-products {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 2rem;
   letter-spacing: 0.00625rem;
   color: var(--text-color);
 }
-.featuredProducts-header .ft-statement {
+.featuredProducts-container.featuredProducts-header .ft-statement {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.25rem;
   letter-spacing: 0.0125rem;
   color: var(--second-text-color);
 }
-.product-list {
+
+.featuredProducts-container .product-list {
   display: flex;
-  gap: 1.88rem;
-  overflow: hidden;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-block: 5rem;
+
 }
-.product-list {
+ .product-list .product-list-child {
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   gap: 1.88rem;
@@ -337,10 +340,7 @@ button {
 .product-info {
   text-align: center;
 }
-.product-card {
-  width: calc(25% - 1rem);
-  max-width: 14.9375rem;
-}
+
 .product-img {
   width: 100%;
   overflow: hidden;
@@ -359,7 +359,8 @@ button {
   padding-left: 6rem;
   padding-top: 7rem;
   position: relative;
-  max-width: 100%;
+  width: 100%;
+  /* margin-left: 3rem; */
 }
 .middle-content .middle-left-arrow {
   position: absolute;
@@ -442,10 +443,13 @@ button {
   width: 100%;
   height: auto;
   overflow: hidden;
+  position: relative;
 }
 
 .carousel-indicator {
-  margin-right: 60%;
+  position: absolute;
+  bottom: 5%;
+  left: 40%;
 }
 /* Asian Wears */
 .asianMan-content {
@@ -509,7 +513,6 @@ button {
   border: none;
 }
 .asianMan-content .asianMan-banner-btn2 {
-  display: flex;
   padding: 0.9375rem 2.5rem;
   flex-direction: column;
   align-items: center;
@@ -523,11 +526,15 @@ button {
   letter-spacing: 0.0125rem;
 }
 /* Featured Posts Header  */
+.featured-posts-container {
+  display: flex;
+  justify-content: center;
+}
 .featured-posts-header {
   text-align: center;
-  margin-inline: 11.2rem;
   margin-top: 7rem;
   margin-bottom: 5rem;
+  width: 50%;
 }
 .featured-posts-h6 {
   color: var(--primary-text-color);
@@ -544,13 +551,16 @@ button {
   letter-spacing: 0.0125rem;
   min-width: 19.3125rem;
 }
+
 .featured-posts-p {
-  width: 10.3125rem;
   color: var(--second-text-color);
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.25rem;
   letter-spacing: 0.0125rem;
+}
+.list{
+  display: flex;
 }
 
 @media screen and (max-width: 795px) {

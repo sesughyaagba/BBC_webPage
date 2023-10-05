@@ -11,9 +11,11 @@ import fill1 from '../assets/Images/fill1.svg';
 import fill2 from '../assets/Images/fill2.svg';
 import fill3 from '../assets/Images/fill3.svg';
 import fill4 from '../assets/Images/fill4.svg';
+import { v4 as uuidv4 } from 'uuid';
 
 const products = [
   {
+    id: uuidv4(),
     imageSrc: product1,
     altText: 'product1',
     department: 'Graphic Design',
@@ -25,6 +27,7 @@ const products = [
     fillImages: [fill1, fill2, fill3, fill4],
   },
   {
+    id: uuidv4(),
     imageSrc: product2,
     altText: 'product2',
     department: 'Graphic Design',
@@ -36,6 +39,7 @@ const products = [
     fillImages: [fill1, fill2, fill3, fill4],
   },
   {
+    id: uuidv4(),
     imageSrc: product3,
     altText: 'product3',
     department: 'Graphic Design',
@@ -47,6 +51,7 @@ const products = [
     fillImages: [fill1, fill2, fill3, fill4],
   },
   {
+    id: uuidv4(),
     imageSrc: product4,
     altText: 'product4',
     department: 'Graphic Design',
@@ -58,6 +63,7 @@ const products = [
     fillImages: [fill1, fill2, fill3, fill4],
   },
   {
+    id: uuidv4(),
     imageSrc: product5,
     altText: 'product5',
     department: 'Graphic Design',
@@ -69,6 +75,7 @@ const products = [
     fillImages: [fill1, fill2, fill3, fill4],
   },
   {
+    id: uuidv4(),
     imageSrc: product6,
     altText: 'product6',
     department: 'Graphic Design',
@@ -80,6 +87,7 @@ const products = [
     fillImages: [fill1, fill2, fill3, fill4],
   },
   {
+    id: uuidv4(),
     imageSrc: product7,
     altText: 'product7',
     department: 'Graphic Design',
@@ -91,6 +99,7 @@ const products = [
     fillImages: [fill1, fill2, fill3, fill4],
   },
   {
+    id: uuidv4(),
     imageSrc: product8,
     altText: 'product8',
     department: 'Graphic Design',
@@ -114,9 +123,9 @@ const FeaturedProducts = () => {
         </p>
       </header>
       <div className="product-list">
-        {products.map((record, i) => (
-          <>
-            <div className="product-card" key={i}>
+        <div className="product-list-child">
+          {products.map((record) => (
+            <div className="product-card" key={record.id}>
               <div className="product-img">
                 <img src={record.imageSrc} alt={record.altText} />
               </div>
@@ -129,15 +138,15 @@ const FeaturedProducts = () => {
                 </h5>
                 <div className="fill-imgs">
                   <a href="#">
-                    {record.fillImages.map((imageSrc, i) => (
-                      <img src={imageSrc} alt="fill1" key={i} />
+                    {record.fillImages.map((imageSrc) => (
+                      <img src={imageSrc} alt="fill1" key={uuidv4()} />
                     ))}
                   </a>
                 </div>
               </div>
             </div>
-          </>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );
