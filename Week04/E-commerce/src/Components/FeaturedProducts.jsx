@@ -130,11 +130,11 @@ const FeaturedProducts = () => {
                 <img src={record.imageSrc} alt={record.altText} />
               </div>
               <div className="product-info">
-                <h5 className="dept-link">{record.department}</h5>
-                <a href="#">{record.departmentLink}</a>
+                <h5 className="dept">{record.department}</h5>
+                <a href="#" className='dept-link'>{record.departmentLink}</a>
                 <h5 className="price">
-                  <span>{record.price.originalPrice}</span>
-                  <span>{record.price.discountedPrice}</span>
+                  <span className='price-1'>{record.price.originalPrice}</span>
+                  <span className='price-2'>{record.price.discountedPrice}</span>
                 </h5>
                 <div className="fill-imgs">
                   <a href="#">

@@ -10,6 +10,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
+  /* Colors */
   --color-texthighlight: rgb(37 43 66);
   --second-text-color: #737373;
   --light-text-color: #fff;
@@ -23,6 +24,7 @@
   --danger-color: #e74040;
   --primary-color: #23a6f0;
   --light-gray-1: #fafafa;
+  --muted-color: #bdbdbd;
 }
 * {
   margin: 0;
@@ -341,18 +343,69 @@ button {
   justify-content: center;
   align-items: center;
 }
-.product-info {
-  text-align: center;
-}
-
-.product-img {
+.product-list-child .product-card .product-img {
   width: 100%;
   overflow: hidden;
+  width: 14.9375rem;
+  height: 26.6875rem;
+  flex-shrink: 0;
 }
-.product-img img {
+.product-list-child .product-img img {
   object-fit: cover;
   width: 100%;
   height: auto;
+}
+.product-info {
+  text-align: center;
+}
+.product-card .dept {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.00625rem;
+}
+.product-card .dept-link {
+  color: var(--second-text-color);
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.0125rem;
+  text-decoration: none;
+}
+.product-card .price {
+  display: flex;
+  gap: 0.31rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card .price .price-1 {
+  color: var(--muted-color, #bdbdbd);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.00625rem;
+}
+.product-card .price .price-2 {
+  color: var(--secondary-color-1);
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.00625rem;
+  max-width: 3.25rem;
+}
+.product-card .fill-imgs {
+  height: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 /* Middle banner  */
@@ -709,8 +762,23 @@ button {
   line-height: 1.5rem;
   letter-spacing: 0.0125rem;
 }
-.bottom-footer-header .footer-links{
-  
+.bottom-footer-header .footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.625rem;
+}
+.footer-links li {
+  list-style: none;
+  color: var(--second-text-color);
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.0125rem;
+}
+
+.footer-links a {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 795px) {
