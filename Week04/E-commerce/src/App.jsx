@@ -5,6 +5,8 @@ import MiddleBanner from './Components/MiddleBanner';
 import AsianWears from './Components/AsianWears';
 import FeaturedPostsHeader from './Components/FeaturedPostsHeader';
 import FeaturedPostsCard from './Components/FeaturedPostsCard';
+import TopFooter from './Components/TopFooter';
+import FooterBottom from './Components/FooterBottom';
 function App() {
   return (
     <>
@@ -26,7 +28,9 @@ function App() {
       <div>
         <FeaturedPostsHeader />
       </div>
-      <div><FeaturedPostsCard/></div>
+      <div><FeaturedPostsCard /></div>
+      <div><TopFooter /></div>
+      <div><FooterBottom/></div>
     </>
   );
 };

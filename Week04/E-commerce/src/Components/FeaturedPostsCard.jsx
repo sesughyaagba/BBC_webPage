@@ -3,6 +3,7 @@ import featuredPost2 from '../assets/Images/featuredPost2.svg';
 import featuredPost3 from '../assets/Images/featuredPost3.svg';
 import comment from '../assets/Images/comment.svg';
 import calendar from '../assets/Images/calendar.svg';
+import { BsChevronRight } from 'react-icons/bs';
 import { v4 as uuidv4 } from 'uuid';
 
 const featuredData = [
@@ -27,16 +28,16 @@ const featuredData = [
     id: uuidv4(),
     imageSrc: featuredPost2,
     button: 'New',
-    categories: ['Facebook', 'Popular', 'Tech'],
-    title: 'Tech Insights: The Future of AI',
+    categories: ['Google', 'Trending', 'New'],
+    title: "Loudest à la Madison #1 (L'integral)",
     description:
-      'Explore the latest advancements in artificial intelligence and its impact on technology.',
+      "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
     date: {
-      text: '15 May 2021',
+      text: '22 April 2021',
       imageSrc: calendar,
     },
     comments: {
-      text: '5 comments',
+      text: '10 comments',
       imageSrc: comment,
     },
   },
@@ -44,16 +45,16 @@ const featuredData = [
     id: uuidv4(),
     imageSrc: featuredPost3,
     button: 'New',
-    categories: ['Amazon', 'Deals', 'Shopping'],
-    title: 'Great Deals on Electronics',
+    categories: ['Google', 'Trending', 'New'],
+    title: "Loudest à la Madison #1 (L'integral)",
     description:
-      'Discover amazing discounts on your favorite electronics products.',
+      "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
     date: {
-      text: '5 June 2021',
+      text: '22 April 2021',
       imageSrc: calendar,
     },
     comments: {
-      text: '15 comments',
+      text: '10 comments',
       imageSrc: comment,
     },
   },
@@ -61,15 +62,15 @@ const featuredData = [
 
 const FeaturedPostsCard = () => {
   return (
-    <div className='featured-post-parent'>
+    <div className="featured-post-parent">
       {featuredData.map((post) => (
         <div className="featuredPostsCard-container" key={post.id}>
           <div className="featured-post-child">
-            <div>
+            <div className="featured-img">
               <img src={post.imageSrc} alt="post1" />
+              <span>NEW</span>
             </div>
-            <div>
-              <button>{post.button}</button>
+            <div className="featured-text-content">
               <nav className="featuredPostsCard-nav">
                 <ul className="list">
                   {post.categories.map((category, categoryIndex) => (
@@ -79,22 +80,25 @@ const FeaturedPostsCard = () => {
                   ))}
                 </ul>
               </nav>
-              <h4>{post.title}</h4>
-              <p>{post.description}</p>
-              <span>
+              <h4 className="featured-title">{post.title}</h4>
+              <p className="featured-description">{post.description}</p>
+              <span className="date">
                 <a href="#">
                   <img src={post.date.imageSrc} alt="date" />
                 </a>
                 {post.date.text}
               </span>
-              <span>
+              <span className="comment">
                 <a href="#">
-                  <img src={post.comments.imageSrc} alt="" />
+                  <img src={post.comments.imageSrc} alt="comment" />
                 </a>
                 {post.comments.text}
               </span>
             </div>
           </div>
+          <a href="#" className='chev-link'>
+            Learn more <BsChevronRight className="chev-right" />
+          </a>
         </div>
       ))}
     </div>
