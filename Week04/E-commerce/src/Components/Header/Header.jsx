@@ -1,5 +1,6 @@
 import TopHeader from "./TopHeader"
 import BottomHeader from "./BottomHeader"
+import MobileHeader from "./MobileHeader";
 import ChevronRight from "../../assets/Images/ChevronRight.svg";
 import ChevronLeft from "../../assets/Images/ChevronLeft.svg";
 
@@ -9,6 +10,7 @@ const Header = () => {
       <div>
         <TopHeader />
         <BottomHeader />
+        <MobileHeader/>
       </div>
       <section className="banner">
         <div className="carousel">

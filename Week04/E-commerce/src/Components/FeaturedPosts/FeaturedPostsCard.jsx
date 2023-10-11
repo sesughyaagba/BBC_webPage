@@ -1,8 +1,8 @@
-import featuredPost1 from '../assets/Images/featuredPost1.svg';
-import featuredPost2 from '../assets/Images/featuredPost2.svg';
-import featuredPost3 from '../assets/Images/featuredPost3.svg';
-import comment from '../assets/Images/comment.svg';
-import calendar from '../assets/Images/calendar.svg';
+import featuredPost1 from '../../assets/Images/featuredPost1.svg';
+import featuredPost2 from '../../assets/Images/featuredPost2.svg';
+import featuredPost3 from '../../assets/Images/featuredPost3.svg';
+import comment from '../../assets/Images/comment.svg';
+import calendar from '../../assets/Images/calendar.svg';
 import { BsChevronRight } from 'react-icons/bs';
 import { v4 as uuidv4 } from 'uuid';
 
