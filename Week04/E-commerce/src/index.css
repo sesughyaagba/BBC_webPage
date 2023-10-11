@@ -799,9 +799,7 @@ button {
   }
   .top-bar span {
     color: #252b42;
-    font-family: Montserrat;
     font-size: 1.5rem;
-    font-style: normal;
     font-weight: 700;
     line-height: 2rem;
     letter-spacing: 0.00625rem;
@@ -836,9 +834,10 @@ button {
     letter-spacing: 0.0125rem;
     text-decoration: none;
   }
+
   .middle-content{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
   }
   .middle-content .middle-text {
   width: 10.4rem;
@@ -856,6 +855,16 @@ button {
   letter-spacing: 0.0125rem;
   width: 21.3125rem;
 }
+.bottom-footer-list {
+  display: grid;
+  padding-inline: 12.19rem;
+  padding-block: 3.12rem;
+}
+.carousel-content{
+  display: flex;
+  flex-direction: column;
+}
+
 }
 
 @media screen and (max-width: 795px) {
