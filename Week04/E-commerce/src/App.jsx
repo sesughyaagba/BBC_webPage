@@ -5,18 +5,28 @@ import MiddleBanner from './Components/MiddleBanner';
 import AsianWears from './Components/AsianWears';
 import FeaturedPosts from './Components/FeaturedPosts/FeaturedPosts';
 import Footer from './Components/Footer /Footer';
-function App() {
+
+const App = () => {
   return (
-    <>
-        <Header />
-        <EditorPick />
-        <FeaturedProducts />
-        <MiddleBanner />
-        <AsianWears />
-      <FeaturedPosts/>
-     <Footer /> 
-    </>
+    <div>
+      <Header />
+      <EditorPick />
+      <FeaturedProducts />
+      <MiddleBanner />
+      <AsianWears />
+      <FeaturedPosts />
+      <Footer />
+    </div>
   );
 };
-
 export default App;
+// import HomePage from "./pages/Homepage";
+// function App() {
+//   return (
+//     <>
+//        <HomePage/>
+//     </>
+//   );
+// };
+
+// export default App;
