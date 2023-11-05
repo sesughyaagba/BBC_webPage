@@ -3,9 +3,8 @@ const AsianWears = () => {
   return (
     <>
       <section className="asianMan-banner">
-        <div className="asianMan-content">
           <div className="asianMan-content">
-            <div>
+            <div className='asianMan-imageBox'>
               <img src={asianMan} alt="Saian man & woman" />
             </div>
             <div className="asianMan-text">
@@ -20,7 +19,6 @@ const AsianWears = () => {
               </div>
             </div>
           </div>
-        </div>
       </section>
     </>
   );

@@ -14,7 +14,7 @@ const MiddleBanner = () => {
               alt="Right click"
             />
             <img className="middle-right-arrow" src={ChevronRight} alt="Left" />
-            <div className="middle-content">
+            <div className="middle">
               <div className="middle-text">
                 <h4 className="middle-summer">SUMMER 2020</h4>
                 <h1 className="middle-collection">Vita Classic Product</h1>

@@ -35,6 +35,7 @@ const footerLinks = [
       { name: 'API', href: '#' },
     ],
   },
+  
 ];
 function FooterBottom() {
   return (
@@ -51,6 +52,13 @@ function FooterBottom() {
           </ul>
         </div>
       ))}
+      <div className="fotter-functions">
+
+          <input className="footer-placeholder" type="text" placeholder="your email" />
+          <button className="footer-button">Subscribe</button>
+       
+      </div>
+      <input type="text" placeholder="Lore imp sum dolor Amit" />
     </div>
   );
 }

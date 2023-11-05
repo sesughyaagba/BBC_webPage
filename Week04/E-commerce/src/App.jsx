@@ -4,7 +4,7 @@ import FeaturedProducts from './Components/FeaturedProducts';
 import MiddleBanner from './Components/MiddleBanner';
 import AsianWears from './Components/AsianWears';
 import FeaturedPosts from './Components/FeaturedPosts/FeaturedPosts';
-import Footer from './Components/Footer /Footer';
+import Footer from './Components/Footer/Footer';
 
 const App = () => {
   return (
@@ -20,13 +20,4 @@ const App = () => {
   );
 };
 export default App;
-// import HomePage from "./pages/Homepage";
-// function App() {
-//   return (
-//     <>
-//        <HomePage/>
-//     </>
-//   );
-// };
 
-// export default App;

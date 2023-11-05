@@ -31,10 +31,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* .image-response {
-  height: 100%;
-  width: 100%;
-} */
 
 /* Top Header section */
 .top-header {
@@ -156,7 +152,7 @@ button {
   right: 20px;
   top: 50%;
 }
-.carousel-content .text-content {
+.carousel-content .carousel-text-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -164,7 +160,7 @@ button {
   gap: 2.19rem;
   margin-top: 10rem;
 }
-.carousel-content .text-content .summer {
+.carousel-content .carousel-text-content .summer {
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
@@ -172,7 +168,7 @@ button {
   color: var(--light-text-color);
   width: 9.25rem;
 }
-.carousel-content .text-content .collection {
+.carousel-content .carousel-text-content .collection {
   font-size: 2.625rem;
   font-style: normal;
   font-weight: 700;
@@ -181,7 +177,7 @@ button {
   width: 34.25rem;
   height: fit-content;
 }
-.carousel-content .text-content .advert-text {
+.carousel-content .carousel-text-content .advert-text {
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
@@ -189,7 +185,7 @@ button {
   color: var(--light-text-color);
   width: 65%;
 }
-.carousel-content .text-content .banner-button {
+.carousel-content .carousel-text-content .banner-button {
   padding: 0.94rem 2.5rem 0.94rem 2.5rem;
   font-size: 1.5rem;
   font-style: normal;
@@ -409,6 +405,10 @@ button {
 }
 
 /* Middle banner  */
+.middle {
+  display: flex;
+  gap: 15rem;
+}
 .middle-content {
   background-color: var(--secondary-color-1);
   display: flex;
@@ -782,8 +782,18 @@ button {
 .mobile-nav {
   display: none;
 }
+.footer-functions {
+  display: flex;
+  width: 20.0625rem;
+  padding: 0.9375rem 14rem 0.9375rem 1.25rem;
+  align-items: center;
+}
 
 @media screen and (max-width: 375px) {
+  .top-header {
+    display: none;
+  }
+
   .bottom-header {
     display: none;
   }
@@ -834,40 +844,112 @@ button {
     letter-spacing: 0.0125rem;
     text-decoration: none;
   }
+  .grid-imgs {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
-  .middle-content{
+  .middle-content {
     display: flex;
     flex-direction: column;
   }
   .middle-content .middle-text {
-  width: 10.4rem;
-  gap: 0.5rem;
- 
-}
-.middle-content .middle-text .middle-summer {
-  font-size: 0.8rem;
-  line-height: 0.8rem;
-}
-.middle-content .middle-advert-text {
-  font-size: 0.2rem;
-  font-weight: 400;
-  line-height: 1.25rem;
-  letter-spacing: 0.0125rem;
-  width: 21.3125rem;
-}
-.bottom-footer-list {
-  display: grid;
-  padding-inline: 12.19rem;
-  padding-block: 3.12rem;
-}
-.carousel-content{
-  display: flex;
-  flex-direction: column;
+    width: 10.4rem;
+    gap: 0.5rem;
+  }
+  .middle-content .middle-text .middle-summer {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+  }
+  .middle-content .middle-advert-text {
+    font-size: 0.2rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: 0.0125rem;
+    width: 21.3125rem;
+  }
+
+  .carousel-content {
+    background-image: url(./assets/Images/small-banner.svg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .carousel-text-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .carousel-content .collection {
+    display: flex;
+    font-size: 0.5rem;
+    text-align: center;
+  }
+
+  .asianMan-content .asianMan-text {
+    margin-top: 7.5rem;
+  }
+  .asianMan-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.12rem;
+  }
+  .asianMan-imageBox img {
+    width: 100%;
+  }
+  .asianMan-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    gap: 0.94rem;
+  }
+  .featured-post-parent {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 12.19rem;
+    gap: 1rem;
+  }
+  .middle-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 7rem;
+    width: 100%;
+  }
+  .featured-post-parent {
+    display: flex;
+    margin-inline: 0;
+    gap: 1rem;
+  }
+
+  .top-footer-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: start;
+  }
+  .bottom-footer-list {
+    display: grid;
+    gap: 3rem;
+    padding-inline: 4rem;
+    padding-block: 3.12rem;
+  }
+  .asianMan-content .asianMan-collection {
+    max-width: 18.96744rem;
+    max-height: 8.78119rem;
+    /* font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3.125rem; */
+    text-align: center;
+    /* letter-spacing: 0.0125rem; */
+  }
 }
 
-}
-
-@media screen and (max-width: 795px) {
+/* @media screen and (max-width: 795px) {
   .menu {
     flex-direction: column;
   }
@@ -917,39 +999,5 @@ button {
     align-items: center;
     padding-left: 0rem;
   }
-}
-
-/* @media all and (max-width: 930px) {
-  .bottom-header {
-    row-gap: 1rem;
-  }
-
-  .nav-left {
-    margin-left: auto;
-  }
-}
-
-@media all and (min-width: 1024px) {
-  .editor-pick-section .images-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-
-  .featuredProducts-header p {
-    max-width: 35vw;
-    margin-inline: auto;
-  }
-}
-
-@media all and (min-width: 1440px) {
-  .logo-box, .quick-links, .copyright, .editor-pick-section {
-    padding-inline: 12.19rem;
-  }
-
-  .bestseller-section {
-    padding-inline: 12.19rem 7.56rem;
-  }
-
-}
- */
+  
+} */

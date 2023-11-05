@@ -26,6 +26,7 @@ const products = [
     },
     fillImages: [fill1, fill2, fill3, fill4],
   },
+ 
   {
     id: uuidv4(),
     imageSrc: product2,
